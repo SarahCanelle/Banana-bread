@@ -1,4 +1,12 @@
 $( document ).ready(function() {
-	alert("Bienvenue");
-	$("p").addClass('maclasserouge');
+	
+
+$("p").on ("click", function() {
+
+	if($("p").hasClass('maclasserouge')){
+		$("p").removeClass ('maclasserouge');
+	}else{ 
+		$("p").addClass('maclasserouge');
+		}
+	});
 });
